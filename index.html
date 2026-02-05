@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dissezione del cuore di suino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --rosso: #8b1e1e;
+            --grigio-scuro: #2e2e2e;
+            --grigio-chiaro: #f4f4f4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            color: var(--grigio-scuro);
+            background-color: white;
+            line-height: 1.6;
+        }
+
+        /* ===== MENU ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--grigio-scuro);
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--rosso);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                        url("img/cuore-hero.jpg") center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 12px 25px;
+            margin-right: 15px;
+            transition: 0.3s;
+        }
+
+        .hero a:hover {
+            background: var(--rosso);
+            border-color: var(--rosso);
+        }
+
+        /* ===== SEZIONI ===== */
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 20px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--rosso);
+            margin-bottom: 20px;
+        }
+
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .two-columns img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* ===== SCOPO ===== */
+        .scopo {
+            background: var(--grigio-chiaro);
+        }
+
+        .scopo ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .scopo li {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .scopo li::before {
+            content: "•";
+            color: var(--rosso);
+            position: absolute;
+            left: 0;
+        }
+
+        /* ===== CARD ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--rosso);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: var(--rosso);
+        }
+
+        /* ===== CHIUSURA ===== */
+        .finale {
+            text-align: center;
+            background: var(--grigio-chiaro);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--grigio-scuro);
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <strong>Cuore di suino</strong>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="metodo.html">Metodo</a>
+            <a href="anatomia.html">Anatomia</a>
+            <a href="dissezione.html">Dissezione</a>
+            <a href="funzionamento.html">Funzionamento & Conclusioni</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Dissezione del cuore di suino</h1>
+        <p>Un’esperienza di laboratorio per comprendere la relazione tra struttura e funzione del cuore.</p>
+        <a href="#introduzione">Inizia il percorso</a>
+        <a href="metodo.html">Vai al metodo</a>
+    </div>
+</section>
+
+<section id="introduzione">
+    <div class="two-columns">
+        <div>
+            <h2>Perché questo lavoro</h2>
+            <p>
+                Il cuore è un organo che spesso viene studiato solo in modo teorico.
+                Attraverso la dissezione di un cuore di suino abbiamo potuto osservare
+                direttamente come ogni struttura sia strettamente legata alla funzione
+                che svolge. All’inizio alcuni aspetti non erano immediati, ma il lavoro
+                pratico ci ha permesso di comprenderli in modo più profondo.
+            </p>
+        </div>
+        <img src="Cuore1.jpg" alt="Cuore di suino">
+    </div>
+</section>
+
+<section class="scopo">
+    <h2>Scopo dell’esperienza</h2>
+    <ul>
+        <li>Studiare l’anatomia del cuore</li>
+        <li>Comprendere il funzionamento del sistema cardiovascolare</li>
+        <li>Collegare teoria e osservazione diretta</li>
+        <li>Utilizzare il cuore di suino come modello anatomico</li>
+    </ul>
+    <p style="margin-top:20px;">
+        <a href="metodo.html">Approfondisci il metodo →</a>
+    </p>
+</section>
+
+<section>
+    <h2>Il nostro percorso</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Metodo</h3>
+            <p>Materiali, strumenti e procedimento sperimentale.</p>
+        </div>
+        <div class="card">
+            <h3>Anatomia</h3>
+            <p>Struttura esterna, pareti e vasi del cuore.</p>
+        </div>
+        <div class="card">
+            <h3>Dissezione</h3>
+            <p>Tagli, osservazioni e confronto tra ventricoli.</p>
+        </div>
+        <div class="card">
+            <h3>Funzionamento</h3>
+            <p>Sistole, diastole e flusso del sangue.</p>
+        </div>
+        <div class="card">
+            <h3>Conclusioni</h3>
+            <p>Collegamenti e riflessioni finali.</p>
+        </div>
+    </div>
+</section>
+
+<section class="finale">
+    <h2>Osservare per comprendere</h2>
+    <p>
+        Questa esperienza ci ha permesso di capire che nel cuore ogni dettaglio
+        ha una funzione precisa e che l’osservazione diretta è uno strumento
+        fondamentale per comprendere la biologia.
+    </p>
+    <p style="margin-top:20px;">
+        <a href="conclusioni.html">Vai alle conclusioni →</a>
+    </p>
+</section>
+
+<footer>
+    <p>Progetto di Scienze – Classe 4E • Dissezione del cuore di suino</p>
+</footer>
+
+</body>
+</html>

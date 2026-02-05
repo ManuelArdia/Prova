@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conclusioni - Cuore di Suino</title>
+    <style>
+        /* STILE GENERALE */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* MENU FISSO */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1e3d59;
+            color: white;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6e40;
+        }
+
+        /* HERO */
+        .hero {
+            height: 350px;
+            background: url('immagini/cuore_conclusioni.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* SEZIONI */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #1e3d59;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        strong {
+            color: #ff6e40;
+        }
+    </style>
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="metodo.html">Metodo</a>
+            <a href="anatomia.html">Anatomia</a>
+            <a href="dissezione.html">Dissezione</a>
+            <a href="funzionamento.html">Funzionamento</a>
+            <a href="conclusioni.html" style="color:#ff6e40;">Conclusioni</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Conclusioni dell’Esperienza</h1>
+        <p>Riflessioni finali sull’osservazione e lo studio del cuore di suino</p>
+    </div>
+
+    <!-- RIEPILOGO ESPERIENZA -->
+    <section>
+        <h2>Riepilogo dell’Esperienza</h2>
+        <p>L’esperienza di dissezione del cuore di suino ha permesso di osservare direttamente le strutture interne ed esterne dell’organo, dalle cavità agli atri e ventricoli, fino alle valvole. Questo approccio pratico ha rafforzato la comprensione della teoria studiata in classe, collegando concetto e realtà.</p>
+    </section>
+
+    <!-- OSSERVAZIONI SCIENTIFICHE -->
+    <section>
+        <h2>Osservazioni Scientifiche</h2>
+        <ul>
+            <li>Il <strong>ventricolo sinistro</strong> ha pareti più spesse rispetto a quello destro, per generare maggiore pressione nella circolazione sistemica.</li>
+            <li>Le <strong>valvole atrioventricolari e semilunari</strong> assicurano un flusso unidirezionale del sangue, evitando il reflusso.</li>
+            <li>Il cuore di suino è molto simile a quello umano, confermando l’efficacia della dissezione per scopi didattici.</li>
+        </ul>
+    </section>
+
+    <!-- APPRENDIMENTO PERSONALE -->
+    <section>
+        <h2>Apprendimento Personale</h2>
+        <p>Ci ha colpito che osservando direttamente il cuore abbiamo potuto capire concretamente il percorso del sangue e il funzionamento delle valvole. Questo tipo di esperienza pratica stimola la curiosità e rende più chiari i concetti scientifici.</p>
+        <p>Un aspetto interessante è come la teoria della pressione e della contrazione cardiaca si collega con la struttura reale del cuore. In futuro sarebbe stimolante osservare altri organi per confrontare struttura e funzione.</p>
+    </section>
+
+    <!-- GRAZIE / CREDITI -->
+    <section>
+        <h2>Ringraziamenti</h2>
+        <p>Autori: Ardia Manuel e Nunziante Vito Classe: 4E</p>
+        <p>Ringraziamo la professoressa Salvia Antonietta per averci permesso questa esperienza pratica, fondamentale per consolidare le nostre conoscenze scientifiche.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Progetto Scienze – Cuore di Suino </p>
+    </footer>
+
+    <script>
+        // ANIMAZIONE ALLO SCROLL
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

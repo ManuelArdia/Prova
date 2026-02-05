@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia del Cuore di Suino</title>
+    <style>
+        /* Reset e base */
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif;}
+        body {background-color: #ffffff; color: #333; line-height: 1.6;}
+        a {text-decoration: none; color: #333;}
+        img {max-width: 100%; border-radius: 5px;}
+
+        /* Menu fisso */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #0d47a1;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 1rem 0;
+            z-index: 1000;
+        }
+        nav a {color: white; font-weight: bold; transition: color 0.3s;}
+        nav a:hover {color: #ffcc00;}
+
+        /* Hero */
+        .hero {
+            height: 80vh;
+            background: url('img/hero-cuore.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 2rem;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top:0; left:0;
+            width:100%; height:100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index:0;
+        }
+        .hero h1, .hero p {position: relative; z-index:1;}
+        .hero h1 {font-size: 3rem; margin-bottom: 1rem;}
+        .hero p {font-size: 1.2rem;}
+
+        /* Sezioni */
+        section {
+            padding: 5rem 10%;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        section:nth-of-type(even) {background-color: #f7f7f7;}
+        section h2 {color: #0d47a1; margin-bottom: 1rem; text-align: center;}
+        section p {margin-bottom: 2rem; text-align: justify;}
+
+        /* Immagini con zoom hover */
+        .img-card {overflow: hidden; border-radius: 10px; margin-bottom: 2rem;}
+        .img-card img {transition: transform 0.5s;}
+        .img-card img:hover {transform: scale(1.05);}
+
+        /* Footer */
+        footer {
+            background-color: #0d47a1;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Scroll behavior */
+        html {scroll-behavior: smooth;}
+    </style>
+</head>
+<body>
+    <!-- Menu fisso -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="metodo.html">Metodo</a>
+        <a href="anatomia.html">Anatomia</a>
+        <a href="funzionamento.html">Funzionamento</a>
+        <a href="conclusioni.html">Conclusioni</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Anatomia del Cuore di Suino</h1>
+        <p>Esploriamo atri, ventricoli, valvole e setto interventricolare</p>
+    </section>
+
+    <!-- Panoramica generale -->
+    <section>
+        <h2>Il cuore: organo muscolare cavo</h2>
+        <p>Il cuore è diviso in due lati: destro e sinistro, ciascuno composto da atrio e ventricolo. Funziona come una pompa che muove il sangue attraverso due circuiti principali: polmonare e sistemico. La dissezione ci permette di osservare direttamente queste strutture, collegando teoria e pratica.</p>
+        <div class="img-card">
+            <img src="Cuore6.jpg"> <img src="Cuore7.jpg">
+        </div>
+    </section>
+
+    <!-- Lato destro -->
+    <section>
+        <h2>Lato destro</h2>
+        <p>L'atrio destro riceve sangue deossigenato dalle vene cave superiore e inferiore, che passa poi nel ventricolo destro attraverso la valvola tricuspide. Il ventricolo destro pompa il sangue verso i polmoni tramite l'arteria polmonare. Il tessuto muscolare del lato destro è più sottile rispetto al sinistro, adatto alla pressione minore necessaria per la circolazione polmonare.</p>
+        <div class="img-card">
+            <img src="Cuore8.jpg" alt="Cuore lato destro aperto">
+        </div>
+    </section>
+
+    <!-- Lato sinistro -->
+    <section>
+        <h2>Lato sinistro</h2>
+        <p>L'atrio sinistro riceve sangue ossigenato dai polmoni tramite le vene polmonari. Il sangue passa nel ventricolo sinistro attraverso la valvola bicuspide (mitrale) e viene pompato in tutto il corpo tramite l'aorta. La parete del ventricolo sinistro è molto più spessa, necessaria per generare la pressione elevata del circuito sistemico.</p>
+        <div class="img-card">
+            <img src="Cuore9.jpg" alt="Cuore lato sinistro aperto">
+        </div>
+    </section>
+
+    <!-- Valvole e setto interventricolare -->
+    <section>
+        <h2>Valvole e setto interventricolare</h2>
+        <p>Le valvole atrioventricolari (tricuspide e bicuspide) impediscono il reflusso del sangue dagli atri ai ventricoli. Le valvole semilunari (aortica e polmonare) assicurano il flusso unidirezionale verso le arterie principali. Il setto interventricolare separa ventricolo destro e sinistro, garantendo efficienza e sicurezza della pompa cardiaca.</p>
+        <div class="img-card">
+            <img src="Cuore10.jpg" alt="Valvole e setto interventricolare">
+        </div>
+    </section>
+
+    <!-- Approfondimento -->
+    <section>
+        <h2>Approfondimento</h2>
+        <p>Ci ha colpito che il ventricolo sinistro fosse così spesso rispetto al destro, mostrando l’efficienza della pompa sistemica. Questa dissezione permette di confrontare cuore di suino e cuore umano, evidenziando similitudini anatomiche fondamentali per lo studio della fisiologia cardiovascolare.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Progetto Cuore di Suino | Realizzato da Ardia Manuel e Nunziante Vito</p>
+    </footer>
+
+    <!-- Script per fade-in on scroll -->
+    <script>
+        const sections = document.querySelectorAll('section');
+        const options = {threshold: 0.1};
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {observer.observe(section);});
+    </script>
+</body>
+</html>

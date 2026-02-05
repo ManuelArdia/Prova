@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dissezione del Cuore</title>
+    <style>
+        /* STILE GENERALE */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* MENU FISSO */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1e3d59;
+            color: white;
+            padding: 15px 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6e40;
+        }
+
+        /* HERO */
+        .hero {
+            height: 400px;
+            background: url('immagini/cuore_intero.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        /* SEZIONI */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-in-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 {
+            color: #1e3d59;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .img-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .img-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .img-container img:hover {
+            transform: scale(1.05);
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #1e3d59;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- MENU -->
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="metodo.html">Metodo</a>
+            <a href="anatomia.html">Anatomia</a>
+            <a href="dissezione.html" style="color:#ff6e40;">Dissezione</a>
+            <a href="funzionamento.html">Funzionamento</a>
+            <a href="conclusioni.html">Conclusioni</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Dissezione del Cuore di Suino</h1>
+        <p>Osservazione diretta delle cavità e delle valvole dal cuore integro ai tagli longitudinali e trasversali</p>
+    </div>
+
+    <!-- INTRODUZIONE -->
+    <section>
+        <h2>Introduzione</h2>
+        <p>La dissezione del cuore di suino ci permette di osservare direttamente le strutture interne di questo organo muscolare cavo, comprendendo la disposizione delle cavità e delle valvole.</p>
+        <div class="img-container">
+            <img src="Cuore15.jpg" alt="Cuore intero">
+        </div>
+    </section>
+
+    <!-- MATERIALI -->
+    <section>
+        <h2>Materiali e Strumenti</h2>
+        <ul>
+            <li>Cuore di suino integro</li>
+            <li>Vaschetta da dissezione</li>
+            <li>Bisturi</li>
+            <li>Pinzette</li>
+            <li>Stecco di legno</li>
+            <li>Guanti e camice</li>
+        </ul>
+        <div class="img-container">
+            <img src="Cuore16.jpg" alt="Materiali utilizzati">
+        </div>
+        <p><strong>Curiosità:</strong> Il cuore del maiale è simile a quello umano per dimensioni e struttura, rendendolo ideale per l’osservazione diretta.</p>
+    </section>
+
+    <!-- PROCEDIMENTO PARTE 1 -->
+    <section>
+        <h2>Procedimento: Osservazione Esterna</h2>
+        <p>Si osservano il lato anteriore e posteriore del cuore, identificando auricole, aorta, tronco polmonare e vene polmonari.</p>
+        <div class="img-container">
+            <img src="Cuore17.jpg" alt="Lato esterno del cuore">
+        </div>
+    </section>
+
+    <!-- PROCEDIMENTO PARTE 2 -->
+    <section>
+        <h2>Rimozione dei Coaguli</h2>
+        <p>Dopo la morte, il sangue coagula nelle cavità. Rimuovere questi coaguli è fondamentale per osservare le strutture interne senza ostacoli.</p>
+        <div class="img-container">
+            <img src="Cuore18.jpg" alt="Coaguli rimossi">
+        </div>
+    </section>
+
+    <!-- PROCEDIMENTO PARTE 3 -->
+    <section>
+        <h2>Taglio Longitudinale</h2>
+        <p>Si effettua un taglio verticale per aprire il cuore e osservare le cavità interne e le valvole (tricuspide e mitrale).</p>
+        <div class="img-container">
+            <img src="Cuore19.jpg" alt="Taglio longitudinale">
+        </div>
+    </section>
+
+    <!-- PROCEDIMENTO PARTE 4 -->
+    <section>
+        <h2>Taglio Trasversale dell'Apice</h2>
+        <p>Il taglio trasversale permette di osservare i ventricoli in sezione, evidenziando le differenze di spessore tra destro e sinistro.</p>
+        <div class="img-container">
+            <img src="Cuore20.jpg" alt="Taglio trasversale">
+        </div>
+    </section>
+
+    <!-- CONCLUSIONE -->
+    <section>
+        <h2>Conclusioni</h2>
+        <p>La dissezione del cuore ha permesso di collegare la teoria con l’osservazione pratica, comprendendo il funzionamento delle cavità e delle valvole. Questa esperienza favorisce la comprensione dell’anatomia e del sistema cardiovascolare.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Relazione di laboratorio – Progetto Scienze | Autori: Ardia Manuel e Nunziante Vito</p>
+    </footer>
+
+    <script>
+        // ANIMAZIONE ALLO SCROLL
+        const sections = document.querySelectorAll('section');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>

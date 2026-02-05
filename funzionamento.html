@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Funzionamento del Cuore - Cuore di Suino</title>
+  <style>
+    /* RESET BASE */
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+
+    /* BODY */
+    body {background-color:#f7f7f7; color:#333; line-height:1.6;}
+
+    /* MENU */
+    nav {
+      background-color:#0d47a1;
+      padding:15px 30px;
+      display:flex;
+      justify-content:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    nav a {
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    nav a:hover {color:#ffcc00;}
+    nav a.active {color:#ffcc00;}
+
+    /* HERO */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1615351450649-ff6e0f16aebc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y3VvcmV8fDB8fHx8MTY5Njk1NzAwOQ&ixlib=rb-4.0.3&q=80&w=1080');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      position:relative;
+    }
+    .hero::after {
+      content:"";
+      position:absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h1, .hero p {
+      position:relative;
+      z-index:1;
+    }
+    .hero h1 {font-size:3rem; margin-bottom:10px;}
+    .hero p {font-size:1.2rem;}
+
+    /* SEZIONI */
+    section {
+      padding:60px 20px;
+      max-width:1000px;
+      margin:0 auto;
+      opacity:0;
+      transform:translateY(40px);
+      transition: all 0.8s ease-out;
+    }
+    section.visible {
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    section h2 {
+      color:#0d47a1;
+      margin-bottom:20px;
+      text-align:center;
+    }
+    section img {
+      max-width:100%;
+      border-radius:10px;
+      margin:20px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      transition: transform 0.3s;
+    }
+    section img:hover {transform: scale(1.05);}
+
+    section p {margin-bottom:20px;}
+
+    /* FOOTER */
+    footer {
+      background:#0d47a1;
+      color:white;
+      text-align:center;
+      padding:20px 0;
+      margin-top:40px;
+    }
+
+    /* COLONNE PER CONFRONTO */
+    .columns {
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:center;
+    }
+    .column {
+      flex:1 1 300px;
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+    .column h3 {color:#0d47a1; margin-bottom:10px;}
+    .column p {font-size:0.95rem;}
+  </style>
+</head>
+<body>
+
+  <!-- MENU -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="metodo.html">Metodo</a>
+    <a href="anatomia.html">Anatomia</a>
+    <a href="funzionamento.html" class="active">Funzionamento</a>
+    <a href="conclusioni.html">Conclusioni</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <h1>Funzionamento del Cuore di Suino</h1>
+      <p>Sistole, diastole e percorso del sangue attraverso atri e ventricoli</p>
+    </div>
+  </div>
+
+  <!-- SEZIONE 1: Introduzione -->
+  <section>
+    <h2>Il cuore come pompa</h2>
+    <p>Il cuore è l'organo centrale del sistema cardiovascolare. La dissezione del cuore di suino ci permette di osservare direttamente il funzionamento delle quattro cavità cardiache e di collegare queste osservazioni al cuore umano.</p>
+    <img src="Cuore11.jpg" alt="Cuore intero con flusso sanguigno">
+  </section>
+
+  <!-- SEZIONE 2: Ciclo cardiaco -->
+  <section>
+    <h2>Ciclo cardiaco: Diastole e Sistole</h2>
+    <p>Il cuore pompa il sangue in soli 0,8 secondi, alternando due fasi principali:</p>
+    <ul>
+      <li><strong>Diastole:</strong> i ventricoli e gli atri si rilassano e il sangue entra passivamente.</li>
+      <li><strong>Sistole atriale:</strong> gli atri si contraggono spingendo il sangue nei ventricoli.</li>
+      <li><strong>Sistole ventricolare:</strong> i ventricoli si contraggono, aprendo le valvole semilunari e spingendo il sangue nella circolazione polmonare o sistemica.</li>
+    </ul>
+    <img src="Cuore12.jpg" alt="Ciclo cardiaco animato">
+  </section>
+
+  <!-- SEZIONE 3: Valvole -->
+  <section>
+    <h2>Valvole e flusso unidirezionale</h2>
+    <p>Le valvole atrioventricolari e semilunari garantiscono che il sangue scorra in un’unica direzione. Le valvole semilunari si aprono solo quando la pressione interna del ventricolo raggiunge un valore sufficiente.</p>
+    <img src="Cuore13.jpg" alt="Valvole cardiache">
+    <p><em>Ci ha colpito che le valvole funzionano senza energia attiva, affidandosi solo alla pressione del sangue!</em></p>
+  </section>
+
+  <!-- SEZIONE 4: Confronto ventricoli -->
+  <section>
+    <h2>Ventricolo destro vs ventricolo sinistro</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>Ventricolo destro</h3>
+        <p>Parete sottile, pompa sangue solo verso i polmoni. Cavità più ampia e irregolare.</p>
+      </div>
+      <div class="column">
+        <h3>Ventricolo sinistro</h3>
+        <p>Parete spessa, pompa sangue in tutto il corpo. Cavità più compatta e tondeggiante.</p>
+      </div>
+    </div>
+    <img src="Cuore14.jpg" alt="Confronto ventricoli">
+  </section>
+
+  <!-- SEZIONE 5: Approfondimento -->
+  <section>
+    <h2>Approfondimenti</h2>
+    <p>Questo concetto si collega anche allo studio dell’ipertensione nel ventricolo sinistro umano e alla comprensione delle malattie cardiovascolari. La dissezione del cuore di suino permette di vedere direttamente queste differenze strutturali e funzionali.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Relazione di laboratorio – Cuore di Suino | Autori: Ardia Manuel e Nunziante Vito</p>
+  </footer>
+
+  <!-- SCRIPT FADE-IN -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    window.addEventListener('scroll', () => {
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
